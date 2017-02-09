@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_third"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.usuarioiie.myapp.ThirdActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        >
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="39dp"
+            android:ems="10"
+            android:inputType="phone" />
+
+        <ImageButton
+            android:id="@+id/imageButtonPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="13dp"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/common_full_open_on_phone" />
+
+        <EditText
+            android:id="@+id/editTextWeb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editTextPhone"
+            android:layout_below="@+id/imageButtonPhone"
+            android:layout_marginTop="74dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+        <ImageButton
+            android:id="@+id/imageButtonWeb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/imageButtonPhone"
+            android:layout_alignTop="@+id/editTextWeb"
+            app:srcCompat="@android:drawable/sym_action_chat" />
+
+    </RelativeLayout>
+
+
+
+    <ImageButton
+        android:id="@+id/imageButtonCamera"
+        android:
+        android:layout_width= "match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#E91E63"
+        android:src="@android:drawable/ic_menu_camera"
+        />
+
+
+</RelativeLayout>
